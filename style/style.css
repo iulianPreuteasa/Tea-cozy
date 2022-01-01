@@ -1,6 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -8,18 +7,40 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: space-around;
+
 }
+
+main {
+  margin-top: 70px;
+  padding: 20px;
+
+}
+
+main section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+/* header section  */
+
 header img {
   margin-left: 10px;
   height: 50px;
 }
+
 header {
+  margin-top: 0;
+
   height: 69px;
   border-bottom: 1px solid seashell;
   position: fixed;
@@ -35,4 +56,75 @@ header nav ul {
   justify-content: space-around;
   text-decoration: underline;
   width: 400px;
+}
+
+/* mission section  */
+
+#mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url('./images/img-mission-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+}
+
+/* feature section */
+
+#feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  width: 1000px;
+}
+
+#feature .images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#feature .images caption {
+    padding: 10px;
+}
+
+
+#feature .images img {
+  width: 300px;
+  height: 200px;
+}
+
+/* location section */
+
+#location {
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('./images/img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+/* contact section */
+
+#contact {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* footer section */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
